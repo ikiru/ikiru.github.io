@@ -1,51 +1,66 @@
-$(document).ready(function() {
-  animateDiv($(".a"));
-  animateDiv($(".b"));
-  animateDiv($(".c"));
-  animateDiv($(".d"));
-  animateDiv($(".e"));
-  animateDiv($(".f"));
-  animateDiv($(".g"));
-  animateDiv($(".h"));
-});
-
-function makeNewPosition($container) {
-  // Get viewport dimensions (remove the dimension of the div)
-  var h = $container.height() - 50;
-  var w = $container.width() - 50;
-
-  var nh = Math.floor(Math.random() * h);
-  var nw = Math.floor(Math.random() * w);
-
-  return [nh, nw];
-}
-
-function animateDiv($target) {
-  var newq = makeNewPosition($target.parent());
-  var oldq = $target.offset();
-  var speed = calcSpeed([oldq.top, oldq.left], newq);
-
-  $target.animate(
+$.fn.bounce = function(options) {
+  var settings = $.extend(
     {
-      top: newq[0],
-      left: newq[1]
+      speed: 10
     },
-    speed,
-    function() {
-      animateDiv($target);
-    }
+    options
   );
-}
 
-function calcSpeed(prev, next) {
-  var x = Math.abs(prev[1] - next[1]);
-  var y = Math.abs(prev[0] - next[0]);
+  return $(this).each(function() {
+    var $this = $(this),
+      $parent = $this.parent(),
+      height = $parent.height(),
+      width = $parent.width(),
+      top = Math.floor(Math.random() * (height / 2)) + height / 4,
+      left = Math.floor(Math.random() * (width / 2)) + width / 4,
+      vectorX = settings.speed * (Math.random() > 0.5 ? 1 : -1),
+      vectorY = settings.speed * (Math.random() > 0.5 ? 1 : -1);
 
-  var greatest = x > y ? x : y;
+    // place initialy in a random location
+    $this.css({ top: top, left: left }).data("vector", {
+      x: vectorX,
+      y: vectorY
+    });
 
-  var speedModifier = 0.01;
+    var move = function($e) {
+      var offset = $e.offset(),
+        width = $e.width(),
+        height = $e.height(),
+        vector = $e.data("vector"),
+        $parent = $e.parent();
 
-  var speed = Math.ceil(greatest / speedModifier);
+      if (offset.left <= 0 && vector.x < 0) {
+        vector.x = -1 * vector.x;
+      }
+      if (offset.left + width >= $parent.width()) {
+        vector.x = -1 * vector.x;
+      }
+      if (offset.top <= 0 && vector.y < 0) {
+        vector.y = -1 * vector.y;
+      }
+      if (offset.top + height >= $parent.height()) {
+        vector.y = -1 * vector.y;
+      }
 
-  return speed;
-}
+      $e
+        .css({
+          top: offset.top + vector.y + "px",
+          left: offset.left + vector.x + "px"
+        })
+        .data("vector", {
+          x: vector.x,
+          y: vector.y
+        });
+
+      setTimeout(function() {
+        move($e);
+      }, 50);
+    };
+
+    move($this);
+  });
+};
+
+$(function() {
+  $("#playfield div").bounce({ speed: 0.5 });
+});
