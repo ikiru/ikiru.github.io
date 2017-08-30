@@ -17,12 +17,12 @@ img {
 h1 {
   width: 800px;
   margin: 0px auto;
-  /*display: block;*/
+  display: block;
 }
 
 .face {
   width: 100%;
-  background-image: url("../img/background.png") ;
+
   height: auto;
   display: block;
   z-index: 0;
@@ -30,6 +30,7 @@ h1 {
 
 .wrapper {
   width: 1080px;
+  background-image: url("../img/background.png") ;
   margin: auto;
 }
 
@@ -39,9 +40,10 @@ h1 {
 #playfield{
   width:1000px;
   height: :500px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 1;
-  margin-bottom: -260px;
+  margin-bottom: -500px;
 }
 
 div.a {
