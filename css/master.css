@@ -1,0 +1,116 @@
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body {
+  background-color: navajowhite;
+  font-family: 'Signika', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  width: 800px;
+  margin: 0px auto;
+  display: block;
+}
+
+.face {
+  width: 100%;
+  background-image: url("../img/background.png") ;
+  height: auto;
+  display: block;
+  z-index: 0;
+}
+
+.wrapper {
+  width: 1080px;
+  margin: auto;
+}
+
+
+/*floating effect for the bubbles*/
+
+#playfield{
+  width:1000px;
+  height: :500px;
+  margin: auto;
+  z-index: 1;
+  margin-bottom: -260px;
+}
+
+div.a {
+width: 100px;
+height:100px;
+left: 400px;
+top: 350px;
+position: relative;
+z-index: 1;
+}
+div.b {
+width: 75px;
+height:75px;
+position: relative;
+left: 300px;
+top: 350px;
+z-index: 2;
+}
+
+div.c {
+width: 60px;
+height:60px;
+left: 700px;
+top: 320px;
+position: relative;
+z-index: 3;
+}
+
+div.d {
+width: 75px;
+height:75px;
+position: relative;
+left: 800px;
+top: 150px;
+z-index: 4;
+}
+
+div.e{
+width: 65px;
+height: 65px;
+position: relative;
+left: 200px;
+top: 200px;
+z-index: 4;
+}
+
+div.f{
+width: 70px;
+height: 70px;
+left: 600px;
+top: 150px;
+position: relative;
+z-index: 2;
+}
+
+div.g{
+width: 50px;
+height: 50px;
+left: 500px;
+top: 100px;
+position: relative;
+z-index: 2;
+}
+
+div.h{
+width: 50px;
+height: 50px;
+left: 100px;
+top: 100px;
+position: relative;
+z-index: 3;
+}
