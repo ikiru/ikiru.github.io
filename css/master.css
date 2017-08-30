@@ -17,7 +17,7 @@ img {
 h1 {
   width: 800px;
   margin: 0px auto;
-  display: block;
+  /*display: block;*/
 }
 
 .face {
