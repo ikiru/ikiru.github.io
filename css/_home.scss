@@ -1,114 +1,124 @@
-@import url(https://fonts.googleapis.com/css?family=unquote "signika");
-@import url(https://fonts.googleapis.com/css?family=unquote "vidaloka");
-.menu {
-  width: header-width;
-  height: header-height;
-  background-color: background-color; }
-
 * {
   margin: 0px;
   padding: 0px;
   border: 0px;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
-
+  vertical-align: baseline;
+}
 body {
-  background-color: navajowhite; }
-
+  background-color: navajowhite;
+}
 img {
-  display: block; }
-
+  display: block;
+}
 h1 {
   width: 800px;
   margin: 0px auto;
   margin-left: auto;
   margin-right: auto;
-  display: block; }
-  h1 .face {
+  display: block;
+
+  .face {
     width: 100%;
     height: auto;
     display: block;
-    z-index: 0; }
-  h1 .wrapper {
+    z-index: 0;
+  }
+  .wrapper {
     width: 1000px;
     background-image: url("../img/background.png");
     margin-left: auto;
     margin-right: auto;
-    z-index: 0; }
-  h1 .menu {
+    z-index: 0;
+  }
+  .menu {
     width: 100%;
-    height: 100; }
-  h1 .menu img {
+    height: 100;
+  }
+  .menu img {
     width: 100px;
-    height: 100px; }
-  h1 #playfield {
+    height: 100px;
+  }
+
+  #playfield {
     width: 1000px;
     height: 480px;
     background-image: url("../img/bubbletop.png");
     margin-left: auto;
     margin-right: auto;
-    z-index: 1; }
-  h1 div.a {
+    z-index: 1;
+  }
+  div.a {
     width: 100px;
     height: 100px;
     left: 400px;
     top: 50px;
     position: absolute;
-    z-index: 1; }
-  h1 div.b {
+    z-index: 1;
+  }
+  div.b {
     width: 75px;
     height: 75px;
     position: absolute;
     left: 300px;
     top: 50px;
-    z-index: 2; }
-  h1 div.c {
+    z-index: 2;
+  }
+  div.c {
     width: 60px;
     height: 60px;
     left: 700px;
     top: 30px;
     position: absolute;
-    z-index: 3; }
-  h1 div.d {
+    z-index: 3;
+  }
+  div.d {
     width: 75px;
     height: 75px;
     position: absolute;
     left: 800px;
     top: 150px;
-    z-index: 4; }
-  h1 div.e {
+    z-index: 4;
+  }
+  div.e {
     width: 65px;
     height: 65px;
     position: absolute;
     left: 200px;
     top: 75px;
-    z-index: 4; }
-  h1 div.f {
+    z-index: 4;
+  }
+  div.f {
     width: 70px;
     height: 70px;
     left: 600px;
     top: 150px;
     position: absolute;
-    z-index: 2; }
-  h1 div.g {
+    z-index: 2;
+  }
+  div.g {
     width: 50px;
     height: 50px;
     left: 500px;
     top: 100px;
     position: absolute;
-    z-index: 2; }
-  h1 div.h {
+    z-index: 2;
+  }
+  div.h {
     width: 50px;
     height: 50px;
     left: 100px;
     top: 100px;
     position: absolute;
-    z-index: 3; }
-  h1 div.i {
+    z-index: 3;
+  }
+  div.i {
     width: 50px;
     height: 50px;
     left: 900px;
     top: 200px;
     position: absolute;
-    z-index: 3; }
+    z-index: 3;
+  }
+}
