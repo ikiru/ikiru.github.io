@@ -126,10 +126,6 @@ div.i {
   position: absolute;
   z-index: 3; }
 
-body {
-  background-color: white;
-  background-image: none; }
-
 .soda {
   width: 300px;
   margin-left: auto;
