@@ -1,14 +1,11 @@
 .menu {
-  width: side-width;
-  height: side-height;
-
+  width: $side-width;
+  height: $side-height;
   display: inline-block;
   position: fixed;
-  padding: 10px;
+  padding: 15px;
 }
 
 .menu img {
-  width: menu-width;
-  height: menu-height;
   display: block;
 }

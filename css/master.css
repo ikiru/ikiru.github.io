@@ -1,15 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=unquote "signika");
 @import url(https://fonts.googleapis.com/css?family=unquote "vidaloka");
 .menu {
-  width: side-width;
-  height: side-height;
+  width: 200px;
+  height: 650px;
   display: inline-block;
   position: fixed;
-  padding: 10px; }
+  padding: 15px; }
 
 .menu img {
-  width: menu-width;
-  height: menu-height;
   display: block; }
 
 * {
