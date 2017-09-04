@@ -1,0 +1,26 @@
+.menu {
+  width: 200px;
+  height: 650px;
+  display: inline-block;
+  position: fixed;
+  padding: 15px; }
+
+.menu img {
+  display: block; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  background-color: white; }
+
+.soda {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
