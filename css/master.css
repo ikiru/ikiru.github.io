@@ -31,12 +31,6 @@ h1 {
   margin-right: auto;
   display: block; }
 
-.face {
-  width: 100%;
-  height: auto;
-  display: block;
-  z-index: 0; }
-
 .wrapper {
   width: 1000px;
   padding: 50px;
@@ -44,15 +38,21 @@ h1 {
   margin-right: auto;
   z-index: 0; }
 
+.face img {
+  width: 1000px;
+  height: auto;
+  display: block; }
+
 #playfield {
   width: 1000px;
   height: 480px;
   background-image: url("../img/bubbles/bubbletop.png");
   margin-left: auto;
   margin-right: auto;
-  z-index: 1; }
+  padding-left: 250px;
+  padding-top: 50px; }
 
-div.a {
+div .a img {
   width: 100px;
   height: 100px;
   left: 200px;
@@ -60,7 +60,7 @@ div.a {
   position: absolute;
   z-index: 1; }
 
-div.b {
+div .b img {
   width: 75px;
   height: 75px;
   position: absolute;
@@ -68,7 +68,7 @@ div.b {
   top: 50px;
   z-index: 2; }
 
-div.c {
+div .c img {
   width: 60px;
   height: 60px;
   left: 700px;
@@ -76,7 +76,7 @@ div.c {
   position: absolute;
   z-index: 3; }
 
-div.d {
+div .d img {
   width: 75px;
   height: 75px;
   position: absolute;
@@ -84,7 +84,7 @@ div.d {
   top: 150px;
   z-index: 4; }
 
-div.e {
+div .e img {
   width: 65px;
   height: 65px;
   position: absolute;
@@ -92,7 +92,7 @@ div.e {
   top: 75px;
   z-index: 4; }
 
-div.f {
+div .f img {
   width: 70px;
   height: 70px;
   left: 600px;
@@ -100,7 +100,7 @@ div.f {
   position: absolute;
   z-index: 2; }
 
-div.g {
+div .g img {
   width: 50px;
   height: 50px;
   left: 500px;
@@ -108,7 +108,7 @@ div.g {
   position: absolute;
   z-index: 2; }
 
-div.h {
+div .h img {
   width: 50px;
   height: 50px;
   left: 100px;
@@ -116,7 +116,7 @@ div.h {
   position: absolute;
   z-index: 3; }
 
-div.i {
+div .i img {
   width: 50px;
   height: 50px;
   left: 900px;

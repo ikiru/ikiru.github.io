@@ -8,11 +8,12 @@
   <title>Jeff Winkler's Portfolio</title>
 
   <!-- jquery-3 -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-  <!-- Foundation -->
-  <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
   <!-- Live Reload  -->
   <script>
@@ -29,24 +30,35 @@
 
 </head>
 
+
+
+
+
+
+
 <body>
 
-     <!-- Menu -->
-     <div class="menu">
-        <a href="index.html"><img src="img/bubbles/homecanada.png" alt="Home"></a>
-         <a href="portfoliocrush.html"><img src="img/bubbles/portfoliocrush.png" alt="Portfolio"></a>
-        <a href="resume.html"><img src="img/bubbles/resumefrostie.png" alt="Frostie"></a>
-         <a href="contact.html"><img src="img/bubbles/contactgrape.png" alt="Contact"></a>
-     </div>
+  <!-- Menu -->
+
+  <div class="menu">
+    <a href="index.html"><img src="img/bubbles/homecanada.png" alt="Home"></a>
+    <a href="portfoliocrush.html"><img src="img/bubbles/portfoliocrush.png" alt="Portfolio"></a>
+    <a href="resume.html"><img src="img/bubbles/resumefrostie.png" alt="Frostie"></a>
+    <a href="contact.html"><img src="img/bubbles/contactgrape.png" alt="Contact"></a>
+  </div>
 
   <!-- bubble face  -->
 
-   <div class="wrapper">
-
-      <div class="10-columns text-center ">
+  <div class="container-fluid">
+    <div class="wrapper">
+      <div class="col-md-10 ">
         <h1>And now . . . your choice of Quality</h1>
+      </div>
+
+
         <!-- Area for the bublles to play in -->
-      <div id="playfield">
+
+          <div id="playfield">
 
             <div class='a'>
               <img src="img/bubbles/python.png" alt="Python">
@@ -84,36 +96,39 @@
               <img src="img/bubbles/angular.png" alt="Angular">
             </div>
 
-      </div>
+          </div>
 
         <!-- bubble face  -->
-        <div class="face">
-          <img src="img/bubbles/bubbleface.png" alt="">
-        </div>
+      <div class="face">
+<img src="img/bubbles/bubbleface.png" alt="">
+      </div>
+
 
         <!-- Bottom Headline  -->
 
 
       </div>
-      <div class="footer">
-          <div  class="med-3">
+
+
+      <div class="col-md-6">
+        <div class="footer">
+          <div class="col-md-2">
             <h1>The Designer you will like . . .</h1>
           </div>
 
-          <div  class="small-7 large-offset-5 med-5 columns">
+          <div class="col-md-6">
             <h1>The name you will know.</h1>
           </div>
         </div>
+      </div>
     </div>
+  </div>
 
 
+  <!-- js scripts -->
 
-    <!-- js scripts -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/bubble.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/bubble.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@ $.fn.bounce = function(options) {
 
   return $(this).each(function() {
     var $this = $(this),
-      $parent = $this.parent(),
+      $parent = $this.parent().parent(),
       height = $parent.height(),
       width = $parent.width(),
       top = Math.floor(Math.random() * (height / 2)) + height / 4,
@@ -16,6 +16,7 @@ $.fn.bounce = function(options) {
       vectorX = settings.speed * (Math.random() > 0.5 ? 1 : -1),
       vectorY = settings.speed * (Math.random() > 0.5 ? 1 : -1);
 
+    console.log($parent);
     // place initialy in a random location
     $this.css({ top: top, left: left }).data("vector", {
       x: vectorX,
@@ -62,5 +63,5 @@ $.fn.bounce = function(options) {
 };
 
 $(function() {
-  $("#playfield div").bounce({ speed: 0.5 });
+  $("#playfield img").bounce({ speed: 0.5 });
 });
