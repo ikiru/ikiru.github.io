@@ -63,5 +63,5 @@ $.fn.bounce = function(options) {
 };
 
 $(function() {
-  $("#playfield img").bounce({ speed: 0.5 });
+  $("#playfield img").bounce({ speed: 1 });
 });
