@@ -28,18 +28,22 @@ $.fn.bounce = function(options) {
         width = $e.width(),
         height = $e.height(),
         vector = $e.data("vector"),
-        $parent = $e.parent();
+        $parent = $e.parent().parent();
+      bodywidth = ($(document).width() - $("#playfield").width()) / 2;
 
-      if (offset.left <= 0 && vector.x < 0) {
+      if (offset.left <= bodywidth && vector.x < 0) {
         vector.x = -1 * vector.x;
       }
-      if (offset.left + width >= $parent.width()) {
+      console.log(bodywidth);
+      if (offset.left + width >= $parent.width() + bodywidth) {
         vector.x = -1 * vector.x;
       }
-      if (offset.top <= 0 && vector.y < 0) {
+      if (offset.top <= 108 && vector.y < 0) {
         vector.y = -1 * vector.y;
       }
-      if (offset.top + height >= $parent.height()) {
+      if (offset.top >= $parent.height() + 108) {
+        // console.log("offset", offset.top);
+        // console.log($parent.height() + 108);
         vector.y = -1 * vector.y;
       }
 
@@ -63,5 +67,5 @@ $.fn.bounce = function(options) {
 };
 
 $(function() {
-  $("#playfield img").bounce({ speed: 1 });
+  $("#playfield img").bounce({ speed: 10 });
 });

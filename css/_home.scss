@@ -13,10 +13,11 @@ img {
   display: block;
 }
 h1 {
+  width: auto;
   font-size: $h1-font-size;
 }
 .wrapper {
-  width: 1000px;
+  width: 70%;
   padding: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -31,16 +32,20 @@ h1 {
 
 #playfield {
   width: 100%;
-  height: 480px;
-  // background-image: url("../img/bubbles/bubbletop.png");
+
   margin-left: auto;
   margin-right: auto;
+}
+
+#playfield > img:first-child {
+  width: 100%;
+  height: auto;
 }
 
 div .a img {
   width: 100px;
   height: 100px;
-  left: 200px;
+  left: 500px;
   top: 50px;
   position: absolute;
   z-index: 1;
@@ -49,15 +54,15 @@ div .b img {
   width: 75px;
   height: 75px;
   position: absolute;
-  left: 300px;
-  top: 50px;
+  left: 400px;
+  top: 150px;
   z-index: 2;
 }
 div .c img {
   width: 60px;
   height: 60px;
   left: 700px;
-  top: 30px;
+  top: 330px;
   position: absolute;
   z-index: 3;
 }
@@ -66,14 +71,14 @@ div .d img {
   height: 75px;
   position: absolute;
   left: 800px;
-  top: 150px;
+  top: 450px;
   z-index: 4;
 }
 div .e img {
   width: 65px;
   height: 65px;
   position: absolute;
-  left: 200px;
+  left: 300px;
   top: 75px;
   z-index: 4;
 }
@@ -81,7 +86,7 @@ div .f img {
   width: 70px;
   height: 70px;
   left: 600px;
-  top: 150px;
+  top: 250px;
   position: absolute;
   z-index: 2;
 }
@@ -89,14 +94,14 @@ div .g img {
   width: 50px;
   height: 50px;
   left: 500px;
-  top: 100px;
+  top: 200px;
   position: absolute;
   z-index: 2;
 }
 div .h img {
   width: 50px;
   height: 50px;
-  left: 100px;
+  left: 400px;
   top: 100px;
   position: absolute;
   z-index: 3;
