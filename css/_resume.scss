@@ -8,6 +8,9 @@
   background-color: $resume-primary;
 }
 
+img {
+}
+
 h1 {
   width: 700px;
   margin-left: 300px;
@@ -42,9 +45,11 @@ h1 {
 .footer {
   background-color: $resume-secondary;
   width: 100%;
-  height: 100px;
+  height: 200px;
   color: white;
   display: block;
+  position: inherit;
+  bottom: 0px;
 }
 
 .footer h1 {
