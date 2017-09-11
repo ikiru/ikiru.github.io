@@ -25,13 +25,17 @@ body {
   margin-left: 200px;
 }
 
+.oranges {
+  margin-left: 200px;
+}
+
 .oranges img {
-  height: 200px;
-  width: 200px;
+  height: $orange;
+  width: $orange;
   display: block;
 }
 
 .crate img {
-  width: 400px;
+  width: 350px;
   height: auto;
 }

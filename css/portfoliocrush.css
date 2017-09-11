@@ -31,11 +31,14 @@ body {
   height: auto;
   margin-left: 200px; }
 
+.oranges {
+  margin-left: 200px; }
+
 .oranges img {
-  height: 200px;
-  width: 200px;
+  height: 170px;
+  width: 170px;
   display: block; }
 
 .crate img {
-  width: 400px;
+  width: 350px;
   height: auto; }
