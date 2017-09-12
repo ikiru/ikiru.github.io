@@ -6,12 +6,26 @@
   font: inherit;
   vertical-align: baseline;
 }
-
-.apples {
+body {
+  background-color: ivory;
 }
 
-.pears {
+h1 {
+  width: 500px;
+  margin: auto;
+  font-size: $portfolio-h1;
+  font-family: $headline-font;
 }
 
-.peaches {
+.posterrow {
+  margin-left: 250px;
+}
+.apple {
+  margin: 50px;
+  display: inline-block;
+  box-shadow: 10px 10px 5px #888888;
+}
+.apple img {
+  width: 150px;
+  height: auto;
 }
