@@ -1,7 +1,6 @@
 .menu {
   width: 200px;
   height: 650px;
-  display: inline-block;
   position: fixed;
   padding: 15px;
   z-index: 7; }
