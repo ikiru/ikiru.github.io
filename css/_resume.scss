@@ -45,14 +45,14 @@ h2 {
 .top h2 {
   font-family: $resume-font-secondary;
   display: inline-block;
-  font-size: 80pt;
+  font-size: 70pt;
   color: #ff0806;
 }
 
 .footer {
   background-color: $resume-secondary;
   width: 100%;
-  height: 150px;
+  height: 250px;
   color: white;
   position: absolute;
   bottom: 0px;
@@ -68,7 +68,7 @@ h2 {
 }
 
 .realfrostie img {
-  width: 25%;
+  width: 35%;
   height: auto;
   z-index: 2;
   position: absolute;
