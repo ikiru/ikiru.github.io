@@ -154,7 +154,7 @@
 
 <!-- Resume -->
   <div id="resume" class="collapse">
-    <div class="card card-body button-success text-white py-5">
+    <div class="card card-body bg-success text-white py-5">
       <h2>My Resume</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quia blanditiis, dolorem voluptatibus maiores enim.</p>
     </div>
@@ -162,12 +162,14 @@
 
 <!-- Portfolio -->
   <div id="portfolio" class="collapse">
+    <div class="card card-body bg-warning text-white py-5">
     <h2>My Portfolio</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nemo autem facere asperiores natus laborum.</p>
   </div>
-
+</div>
 <!-- Contact -->
   <div id="contact" class="collapse">
+    <div class="card card-body bg-danger text-white py-5">
     <h2>Contact Me</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates laborum aperiam assumenda fuga enim?</p>
   </div>
@@ -189,7 +191,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script>
   $(".port-item").click(function() {
-  $(".collapse").colapse("");
+  $(".collapse").collapse("hide");
 });
 </script>
 
