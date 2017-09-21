@@ -1,20 +1,47 @@
 .bg-black {
   background: #000;
-  color: #fff; }
+  color: #fff;
+}
+
+.jblue {
+  background-color: #4b5975;
+}
+
+.jbrown {
+  background-color: #75684b;
+}
+
+.jtan {
+  background-color: #c1a159;
+}
+
+.jlightblue {
+  background-color: #8fa0c1;
+}
+
+.jmidblue {
+  background-color: #6b88c1;
+}
 
 #main-header img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 #main-header .port-item {
-  width: 30%; }
-  #main-header .port-item .fa {
-    font-size: 2em; }
+  width: 30%;
+}
+#main-header .port-item .fa {
+  font-size: 2em;
+}
 
 #main-header .port-item:hover {
   opacity: 0.8;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 @media (min-width: 1199px) {
   .port-item {
-    padding: 3em !important; } }
+    padding: 3em !important;
+  }
+}
