@@ -52,18 +52,31 @@
 
             <div>
               <div class="d-flex flex-row text-white align-items-stretch text-center">
+
+              <!-- Home -->
+
                 <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
                   <i class="fa fa-home d-block"></i> Home
                 </div>
-                <div class="port-item p-4 bg-success">
+
+              <!-- Resume -->
+
+                <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
                   <i class="fa fa-graduation-cap d-block"></i> Resume
                 </div>
-                <div class="port-item p-4 bg-warning">
+
+              <!-- Portfolio -->
+
+                <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#portfolio">
                   <i class="fa fa-folder-open d-block"></i> Portfolio
                 </div>
-                <div class="port-item p-4 bg-danger">
+
+              <!-- Conatact -->
+
+                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
                   <i class="fa fa-envelope d-block"></i> Contact
                 </div>
+
               </div>
             </div>
 
@@ -73,9 +86,7 @@
       </div>
     </header>
 
-    <!-- Home -->
-
-    <!-- HOME -->
+<!-- HOME -->
     <div id="home" class="collapse show">
       <div class="card card-body bg-primary text-white py-5">
         <h2>Welcome to my page</h2>
@@ -105,12 +116,12 @@
 
         <h4>Ruby</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width:90%"></div>
+          <div class="progress-bar bg-success" style="width:70%"></div>
         </div>
 
         <h4>Ruby on Rails</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width:90%"></div>
+          <div class="progress-bar bg-success" style="width:70%"></div>
         </div>
 
         <h4>Adobe Photoshop</h4>
@@ -120,7 +131,7 @@
 
         <h4>Adobe Illustrator</h4>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success" style="width:90%"></div>
+          <div class="progress-bar bg-success" style="width:50%"></div>
         </div>
 
         <h4>JavaScript</h4>
@@ -140,14 +151,48 @@
 
       </div>
     </div>
+
+<!-- Resume -->
+  <div id="resume" class="collapse">
+    <div class="card card-body button-success text-white py-5">
+      <h2>My Resume</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quia blanditiis, dolorem voluptatibus maiores enim.</p>
+    </div>
   </div>
 
-  </body>
+<!-- Portfolio -->
+  <div id="portfolio" class="collapse">
+    <h2>My Portfolio</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nemo autem facere asperiores natus laborum.</p>
+  </div>
 
+<!-- Contact -->
+  <div id="contact" class="collapse">
+    <h2>Contact Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates laborum aperiam assumenda fuga enim?</p>
+  </div>
+
+<!-- Footer -->
+
+<footer #main-footer class="p-5 bg-dark text-white">
+  .<div class="row">
+    .<div class="md-6">
+      <a href="#" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download My Resume</a>
+
+    </div>
+  </div>
+</footer>
+</div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+  $(".port-item").click(function() {
+  $(".collapse").colapse("");
+});
+</script>
+
 </body>
 
 </html>
