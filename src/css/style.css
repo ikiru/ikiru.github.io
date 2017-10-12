@@ -17,6 +17,10 @@
 .jmidblue {
   background-color: #92a85b; }
 
+.posters img {
+  width: 200px;
+  align-items: baseline; }
+
 .name .fa {
   margin-right: 20px; }
 
