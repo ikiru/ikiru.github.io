@@ -25,13 +25,17 @@
   height: 100%; }
 
 #main-header .port-item {
-  width: 40%; }
+  width: 40%;
+  height: 100%; }
   #main-header .port-item .fa {
-    font-size: 3em; }
+    font-size: 2em; }
 
 #main-header .port-item:hover {
   opacity: 0.8;
   cursor: pointer; }
+
+.site img {
+  width: 200px; }
 
 @media (min-width: 1199px) {
   .port-item {

@@ -35,8 +35,9 @@
 
   .port-item {
     width: 40%;
+    height: 100%;
     .fa {
-      font-size: 3em;
+      font-size: 2em;
     }
   }
 
@@ -46,6 +47,11 @@
   }
 }
 
+.site {
+  img {
+    width: 200px;
+  }
+}
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
